@@ -1,45 +1,66 @@
 # 📊 NYC Motor Vehicle Collision Analysis (2021-2023)
 
 ## Project Overview
-[cite_start]This repository contains the analysis and Key Performance Indicator (KPI) report created for the New York City (NYC) office, focusing on motor vehicle collision data reported by the **New York City Police Department (NYPD)**[cite: 3, 4].
+This repository contains the analysis and Key Performance Indicator (KPI) report created for the New York City (NYC) office, focusing on motor vehicle collision data reported by the **New York City Police Department (NYPD)**.
 
 The primary objectives of this analysis were to identify:
 1.  **Temporal trends** for accidents and casualties (time, day, and month).
 2.  **Location-based hotspots** that are more prone to accidents.
-3.  [cite_start]**Key factors and vehicle types** contributing to these collisions[cite: 4].
+3.  **Key factors and vehicle types** contributing to these collisions.
 
 ---
 
 ## 📅 Data & Time Period
-* [cite_start]**Source:** NYC Open Data Portal (Motor Vehicle Collisions) [cite: 10]
-* [cite_start]**Time Period:** January 2021 to April 2023 [cite: 4, 11]
-* [cite_start]**Total Records:** 238,421 collisions [cite: 12]
+* **Source:** NYC Open Data Portal (Motor Vehicle Collisions)
+* **Time Period:** January 2021 to April 2023
+* **Total Records:** 238,421 collisions
 
 ### Key Data Fields
-[cite_start]The analysis utilized fields including: `Collision ID`, `Date`, `Time`, `Borough`, `Contributing Factor`, `Persons Injured`, and `Persons Killed`[cite: 13].
+The analysis utilized fields including: `Collision ID`, `Date`, `Time`, `Borough`, `Contributing Factor`, `Persons Injured`, and `Persons Killed`.
 
 ---
 
 ## 📈 Executive Summary of Key Findings
 
-[cite_start]From January 2021 to April 2023, the dataset recorded **230,000+ collisions**, resulting in **116,227+ injuries** and **635 deaths**[cite: 6].
+From January 2021 to April 2023, the dataset recorded **230,000+ collisions**, resulting in **116,227+ injuries** and **635 deaths**.
 
 ### A. Temporal Findings
-* [cite_start]**Most Dangerous Day:** **Friday** is the most dangerous day, responsible for **18% of all deaths**[cite: 8, 19].
-* [cite_start]**Most Dangerous Month:** **July** is the top month for crashes and casualties, with deaths increasing by **38%** from the average[cite: 7, 16].
-* [cite_start]**Peak Accident Time:** Most accidents and injuries happen between **4 PM and 5 PM**, likely due to high traffic[cite: 20].
-* **Peak Fatality Time:** Most casualty-heavy accidents happen between **3 AM and 5 AM**, peaking around **4 AM**. [cite_start]This is likely due to poor lighting and reckless/drunk driving[cite: 30].
+* **Most Dangerous Day:** **Friday** is the most dangerous day, responsible for **18% of all deaths**.
+* **Most Dangerous Month:** **July** is the top month for crashes and casualties, with deaths increasing by **38%** from the average.
+* **Peak Accident Time:** Most accidents and injuries happen between **4 PM and 5 PM**, likely due to high traffic.
+* **Peak Fatality Time:** Most casualty-heavy accidents happen between **3 AM and 5 AM**, peaking around **4 AM**. This is likely due to poor lighting and reckless/drunk driving.
 
 ### B. Location Findings
-* [cite_start]**Most Dangerous Borough:** **Brooklyn** is the most dangerous borough, accounting for approximately **29% of all casualties**[cite: 6, 33].
-* [cite_start]**Top 3 Boroughs for Casualties:** Brooklyn (**29%**), Queens (**25%**), and the Bronx (**20%**)[cite: 33].
-* [cite_start]**Most Dangerous Street:** **Belt Parkway**, which is responsible for **3%** of all casualties[cite: 35].
+* **Most Dangerous Borough:** **Brooklyn** is the most dangerous borough, accounting for approximately **29% of all casualties**.
+* **Top 3 Boroughs for Casualties:** Brooklyn (**29%**), Queens (**25%**), and the Bronx (**20%**).
+* **Most Dangerous Street:** **Belt Parkway**, which is responsible for **3%** of all casualties.
 
 ### C. Contributing Factors
-* [cite_start]**Top Contributing Factor (by Death):** **Unsafe Speed** is responsible for the highest number of deaths (145)[cite: 52, 53].
-* [cite_start]**Other Top Factors:** **Driver Inattention/Distraction** (74 deaths) and **Failure to Yield Right-of-Way** (46 deaths)[cite: 47, 49].
-* [cite_start]**Vehicle Involvement:** **Passenger Vehicles** are involved in about **85%** of all accidents[cite: 36].
-* [cite_start]**Casualty Breakdown:** Motorists contribute to about **42%** of all deaths, while over **45%** of all deaths involve pedestrians[cite: 55, 56].
+* **Top Contributing Factor (by Death):** **Unsafe Speed** is responsible for the highest number of deaths (145).
+* **Other Top Factors (by Death):** **Driver Inattention/Distraction** (74 deaths) and **Failure to Yield Right-of-Way** (46 deaths).
+* **Vehicle Involvement:** **Passenger Vehicles** are involved in about **85%** of all accidents.
+* **Casualty Breakdown:** Motorists contribute to about **42%** of all deaths, while over **45%** of all deaths involve pedestrians.
+
+---
+
+## 🖼️ Power BI Visualizations
+
+The following screenshots capture the key dashboards used for this analysis.
+
+### 1. Trends Dashboard (Temporal Analysis)
+This dashboard visualizes accident, injury, and fatality trends over time (by month and by hour).
+
+![Accident Trends by Month and Hour](nyc_trends.png)
+
+### 2. Comparison Dashboard (Boroughs, Factors, & Vehicle Types)
+This view compares collision counts across boroughs, primary contributing factors, and involved vehicle types.
+
+![Total Accidents by Borough, Factor, and Vehicle Type](nyc_comparison.png)
+
+### 3. Map Dashboard (Location-Based Analysis)
+This map visualizes the precise latitude and longitude of all recorded collisions, highlighting accident clusters and high-risk roads.
+
+![Total Accidents by Latitude and Longitude](nyc_map.png)
 
 ---
 
@@ -59,12 +80,8 @@ Initial data cleaning and handling steps performed:
 
 ## 💡 Recommendations
 The following recommendations are proposed to the city office based on the analysis:
-* [cite_start]Increase the number of traffic police and improve traffic flow during crowded hours[cite: 58].
-* [cite_start]Conduct awareness campaigns around rush hours and weekends[cite: 59, 31].
-* [cite_start]Increase the fine for reckless high-speed driving[cite: 61].
-* [cite_start]Install railings on sidewalks to decrease pedestrian involvement in accidents[cite: 62].
-* [cite_start]Add traffic rules to the curriculum of school students[cite: 63].
-
----
-
-*For detailed analysis and methodology, please refer to the `NYC Collision Analysis Report.pdf` and the associated Jupyter notebooks.*
+* Increase the number of traffic police and improve traffic flow during crowded hours.
+* Conduct awareness campaigns around rush hours.
+* Increase the fine for reckless high-speed driving.
+* Install railings on sidewalks to decrease pedestrian involvement in accidents.
+* Add traffic rules to the curriculum of school students.
