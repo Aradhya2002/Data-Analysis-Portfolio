@@ -2,6 +2,7 @@
 
 ## PowerBi Dashboard
 <img width="1049" height="588" alt="Encounters_page" src="https://github.com/user-attachments/assets/44b2fcf2-a065-4e02-afcf-71634d473c70" />
+<br>
 <img width="1049" height="592" alt="Procedures_page" src="https://github.com/user-attachments/assets/c28eb548-0234-4076-ab17-7db770fbc3da" />
 
 
